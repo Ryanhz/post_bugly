@@ -4,7 +4,7 @@
 @implementation FlutterPostBuglyPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"flutter_post_bugly"
+      methodChannelWithName:@"com.ryan/flutter_post_bugly"
             binaryMessenger:[registrar messenger]];
   FlutterPostBuglyPlugin* instance = [[FlutterPostBuglyPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];

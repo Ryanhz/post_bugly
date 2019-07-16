@@ -16,7 +16,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 public class FlutterPostBuglyPlugin implements MethodCallHandler {
   /** Plugin registration. */
   public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_post_bugly");
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), "com.ryan/flutter_post_bugly");
     channel.setMethodCallHandler(new FlutterPostBuglyPlugin());
   }
 

@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 
 class FlutterPostBugly {
   static const MethodChannel _channel =
-      const MethodChannel('flutter_post_bugly');
+      const MethodChannel('com.ryan/flutter_post_bugly');
 
   static Future<String> get platformVersion async {
     final String version = await _channel.invokeMethod('getPlatformVersion');
